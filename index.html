@@ -1,0 +1,345 @@
+<!doctype html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>精美演示文稿 - 基于reveal.js</title>
+
+		<link rel="stylesheet" href="../dist/reset.css">
+		<link rel="stylesheet" href="../dist/reveal.css">
+		<link rel="stylesheet" href="../dist/theme/moon.css"> <!-- 使用moon主题，更美观现代 -->
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="../plugin/highlight/monokai.css">
+		
+		<style>
+			/* 自定义样式 */
+			.reveal h1, .reveal h2, .reveal h3 {
+				text-transform: none; /* 防止自动大写 */
+				font-family: 'Microsoft YaHei', sans-serif;
+				margin-bottom: 30px;
+			}
+			.reveal h1 { 
+				font-size: 2.5em;
+				text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+			}
+			.reveal .highlight {
+				color: #42affa;
+			}
+			.reveal section img {
+				border: none;
+				box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+				margin: 20px 0;
+			}
+			.reveal table {
+				margin: 30px auto;
+				border-collapse: collapse;
+				font-size: 0.8em;
+				width: 90%;
+			}
+			.reveal table th {
+				background-color: rgba(66, 175, 250, 0.2);
+				padding: 12px;
+			}
+			.reveal table td {
+				padding: 10px;
+				border: 1px solid rgba(255, 255, 255, 0.1);
+			}
+			.reveal .author-info {
+				font-size: 0.6em;
+				margin-top: 2em;
+				color: #ccc;
+			}
+			.reveal .social-links {
+				margin-top: 40px;
+				font-size: 0.7em;
+			}
+			.reveal .social-links a {
+				margin: 0 10px;
+				color: #42affa;
+				text-decoration: none;
+			}
+			.footer {
+				position: fixed;
+				bottom: 5px;
+				left: 5px;
+				font-size: 14px;
+				opacity: 0.5;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="reveal">
+			<!-- 页脚 -->
+			<div class="footer">reveal.js演示文稿 | 2024</div>
+			
+			<div class="slides">
+				<!-- 第1张幻灯片：美化的标题页面 -->
+				<section data-background-gradient="linear-gradient(to bottom, #002147, #1a237e)" data-transition="zoom">
+					<h1>精美<span class="highlight">演示</span>文稿</h1>
+					<h3>使用reveal.js创建的现代化演示</h3>
+					<p>使用方向键导航 <span style="font-size:1.5em">→</span></p>
+					
+					<div class="author-info">
+						<p>作者：王康康</p>
+						<p>2024年4月</p>
+					</div>
+					
+					<aside class="notes">
+						欢迎来到这个演示文稿，这是演讲者可见的笔记。按S键查看演讲者视图。
+					</aside>
+				</section>
+
+				<!-- 第2张幻灯片：带有列表和更好的动画 -->
+				<section data-transition="slide" data-background="#112240">
+					<h2>为什么选择<span class="highlight">reveal.js</span>?</h2>
+					<ul>
+						<li class="fragment fade-up" data-fragment-index="1">支持HTML和CSS的完全控制</li>
+						<li class="fragment fade-up" data-fragment-index="2">精美的过渡效果和动画</li>
+						<li class="fragment fade-up" data-fragment-index="3">支持Markdown和多媒体内容</li>
+						<li class="fragment fade-up" data-fragment-index="4">移动端友好的响应式设计</li>
+						<li class="fragment fade-up" data-fragment-index="5">简单但功能强大的演示工具</li>
+					</ul>
+					
+					<aside class="notes">
+						讲解reveal.js的主要优势和特点。强调其灵活性和易用性。
+					</aside>
+				</section>
+
+				<!-- 第3张幻灯片：垂直幻灯片组 - 现在有更好的背景和过渡 -->
+				<section data-background-color="#01579b">
+					<section data-transition="convex">
+						<h2>垂直幻灯片导航</h2>
+						<p>按<span class="highlight">下箭头键</span>查看子幻灯片 ↓</p>
+						<img src="https://cdn.pixabay.com/photo/2018/04/11/19/48/online-3311158_960_720.png" width="300" alt="导航图示">
+					</section>
+					
+					<section data-transition="convex">
+						<h2>子幻灯片 1</h2>
+						<p>这是垂直方向的第一个子幻灯片</p>
+						<div class="fragment fade-in">
+							<p>垂直幻灯片可以用于：</p>
+							<ul>
+								<li>展示相关连的内容</li>
+								<li>逐步展开复杂概念</li>
+								<li>创建多层次演示流程</li>
+							</ul>
+						</div>
+					</section>
+					
+					<section data-transition="convex">
+						<h2>子幻灯片 2</h2>
+						<p>这是垂直方向的第二个子幻灯片</p>
+						<div style="display: flex; justify-content: space-around; margin-top: 40px;">
+							<div style="text-align: center;">
+								<div style="font-size: 60px;">⬆️</div>
+								<p>向上</p>
+							</div>
+							<div style="text-align: center;">
+								<div style="font-size: 60px;">⬇️</div>
+								<p>向下</p>
+							</div>
+							<div style="text-align: center;">
+								<div style="font-size: 60px;">ESC</div>
+								<p>概览</p>
+							</div>
+						</div>
+					</section>
+				</section>
+
+				<!-- 第4张幻灯片：代码高亮 - 改进样式 -->
+				<section data-transition="fade" data-background="#2a2a2a">
+					<h2>代码高亮<span class="highlight">示例</span></h2>
+					<pre><code class="hljs javascript" data-trim data-line-numbers="2-4|6">
+// 定义一个问候函数
+function greeting(name) {
+  console.log(`你好，${name}!`);
+  return `欢迎您，${name}`;
+}
+
+// 调用函数
+const message = greeting('王康康');
+console.log(message);
+					</code></pre>
+					<p class="fragment">代码可以逐行高亮展示，便于讲解</p>
+					
+					<aside class="notes">
+						这里展示了代码高亮功能，可以按照行号顺序高亮代码，方便讲解具体实现。
+					</aside>
+				</section>
+
+				<!-- 第5张幻灯片：带背景图的幻灯片 - 改进布局和效果 -->
+				<section data-background="https://source.unsplash.com/1600x900/?nature,mountains" 
+						 data-background-opacity="0.7"
+						 data-transition="slide">
+					<div style="background-color: rgba(0,0,0,0.6); padding: 30px; border-radius: 10px;">
+						<h2>视觉<span class="highlight">冲击力</span></h2>
+						<p>精美的背景图片可以增强演示文稿的视觉效果</p>
+						<div class="fragment fade-up">
+							<p>图片和视觉元素可以：</p>
+							<ul>
+								<li>增强受众的记忆</li>
+								<li>传达复杂的概念</li>
+								<li>提高演示的专业性</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+
+				<!-- 第6张幻灯片：Markdown支持 - 改进排版 -->
+				<section data-markdown data-background-color="#282a36" data-transition="concave">
+					<textarea data-template>
+						## Markdown支持
+						
+						直接使用**Markdown语法**，让创建内容更加简洁：
+
+						* 使用星号创建列表
+						* **加粗**和*斜体*文本
+						* [超链接](https://revealjs.com)很容易添加
+						
+						> 引用块也可以轻松实现
+						> 适合引用重要内容
+
+						---
+
+						## 使用分隔符创建新幻灯片
+
+						```python
+						def hello():
+							print("Hello World!")
+							return True
+						```
+
+						注意：Markdown中的三个破折号`---`会创建新的水平幻灯片
+					</textarea>
+				</section>
+
+				<!-- 第7张幻灯片：表格 - 美化表格样式 -->
+				<section data-transition="slide" data-background-color="#263238">
+					<h2>表格<span class="highlight">示例</span></h2>
+					<table>
+						<thead>
+							<tr>
+								<th>项目</th>
+								<th>描述</th>
+								<th>价格</th>
+								<th>推荐指数</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr class="fragment fade-in">
+								<td>基础版</td>
+								<td>适合个人使用的基础功能</td>
+								<td>¥99</td>
+								<td>⭐⭐⭐</td>
+							</tr>
+							<tr class="fragment fade-in">
+								<td>专业版</td>
+								<td>适合专业人士的全功能版本</td>
+								<td>¥199</td>
+								<td>⭐⭐⭐⭐</td>
+							</tr>
+							<tr class="fragment fade-in">
+								<td>企业版</td>
+								<td>适合企业的高级功能和支持</td>
+								<td>¥299</td>
+								<td>⭐⭐⭐⭐⭐</td>
+							</tr>
+						</tbody>
+					</table>
+					<p class="fragment fade-up">表格也可以添加动画效果，逐行展示数据</p>
+				</section>
+
+				<!-- 新增：多媒体幻灯片 -->
+				<section data-background-color="#0D47A1" data-transition="zoom">
+					<h2>多媒体<span class="highlight">支持</span></h2>
+					<div style="display: flex; justify-content: space-around; flex-wrap: wrap;">
+						<div style="margin: 20px; text-align: center;">
+							<img src="https://cdn.pixabay.com/photo/2016/11/19/14/00/code-1839406_960_720.jpg" width="300" alt="代码图片">
+							<p>图片支持</p>
+						</div>
+						<div style="margin: 20px; text-align: center;">
+							<iframe width="300" height="200" src="https://www.youtube.com/embed/l3RQZ4mcr1c" frameborder="0" allowfullscreen></iframe>
+							<p>视频嵌入</p>
+						</div>
+					</div>
+					<p class="fragment">支持各种媒体格式，增强演示效果</p>
+				</section>
+
+				<!-- 新增：图表示例 -->
+				<section data-background-color="#212121" data-transition="slide">
+					<h2>图表与<span class="highlight">可视化</span></h2>
+					<p>reveal.js可以集成各种图表库</p>
+					<div style="display: flex; justify-content: center; align-items: center;">
+						<div style="width: 450px; height: 300px; background-image: url('https://miro.medium.com/max/1400/1*g-MbZm_h97NATHt5vI-Nag.png'); background-size: contain; background-repeat: no-repeat; background-position: center;"></div>
+					</div>
+					<p class="fragment">使用Chart.js, D3.js等可视化库展示数据</p>
+				</section>
+
+				<!-- 第8张幻灯片：结束 - 更美观的结束页 -->
+				<section data-background-gradient="radial-gradient(circle, #4a148c, #311b92)" data-transition="zoom">
+					<h1>谢谢<span class="highlight">观看</span>!</h1>
+					<p>演示文稿结束</p>
+					
+					<div class="social-links">
+						<a href="#"><i class="fa fa-github"></i> Github</a>
+						<a href="#"><i class="fa fa-twitter"></i> Twitter</a>
+						<a href="#"><i class="fa fa-envelope"></i> Email</a>
+					</div>
+					
+					<p style="margin-top: 60px; font-size: 0.8em;">按ESC键查看所有幻灯片概览</p>
+					
+					<aside class="notes">
+						总结要点，感谢观众，并邀请提问。
+					</aside>
+				</section>
+			</div>
+		</div>
+
+		<script src="../dist/reveal.js"></script>
+		<script src="../plugin/notes/notes.js"></script>
+		<script src="../plugin/markdown/markdown.js"></script>
+		<script src="../plugin/highlight/highlight.js"></script>
+		<script src="../plugin/math/math.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+				// 显示控制箭头
+				controls: true,
+				// 进度条
+				progress: true,
+				// 显示页码
+				slideNumber: 'c/t',
+				// 启用幻灯片历史
+				history: true,
+				// 启用键盘快捷键
+				keyboard: true,
+				// 页面缩放
+				center: true,
+				// 应用到所有幻灯片的过渡效果
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+				// 过渡速度
+				transitionSpeed: 'default', // default/fast/slow
+				// 背景过渡
+				backgroundTransition: 'fade',
+				// 页面视图
+				view: 'slide',
+				// 自动播放
+				autoPlayMedia: true,
+				// 更多设置
+				math: {
+					mathjax: 'https://cdn.jsdelivr.net/gh/mathjax/mathjax@2.7.8/MathJax.js',
+					config: 'TeX-AMS_HTML-full',
+					TeX: { Macros: {} }
+				},
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath ]
+			});
+		</script>
+	</body>
+</html>
